@@ -17,4 +17,4 @@
 
 Запускаем миграции python manage.py makemigrations python manage.py migrate
 
-Запускаем проект python3 manage.py runserver
+Запускаем проект python manage.py runserver
