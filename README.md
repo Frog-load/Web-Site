@@ -1,20 +1,21 @@
 # Web-site
 
-    Сайт разработан на Django==2.2.16. В проекте сделано приложение yatube позволяющее вести новости или блог.
-С серверной части реализовано создание постов с добавление изображений, регистрация пользователей, функция изменение пороля.
-Написаны собственные тесты для тестирования views, urls, models и forms. Так же были сверстаны основные страницы на html и
-добавлен и реализованы некоторые интрумены из bootstrap, такие как навигационная панель.
+- Клонируем репорзиторий
+git clone ###
 
-#Запуск проекта
+- Создаем виртуальное окружение
+python -m venv venv 
+venv/Scripts/activate
 
-Клонируем репорзиторий git clone ###
+- Устанавливаем зависимости
+pip install -r requirements.txt
 
-Создаем виртуальное окружение python -m venv venv venv/Scripts/activate
+- Перходим в папку с проектом
+cd yatube_api
 
-Устанавливаем зависимости pip install -r requirements.txt
+- Запускаем миграции
+python manage.py makemigrations
+python manage.py migrate
 
-Перходим в папку с проектом cd yatube
-
-Запускаем миграции python manage.py makemigrations python manage.py migrate
-
-Запускаем проект python manage.py runserver
+- Запускаем проект
+python3 manage.py runserver
